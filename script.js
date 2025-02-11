@@ -2,8 +2,8 @@
 // Array in javascript
 var arr= [1,2,3,45,1,6,7];
 // foreach, map, filter find and indexof
-// Lets say we want to do something with every memeber of the array then we 
-// would be foreach
+// Lets say we want to do something with every member of the array then we 
+// would be using foreach
 arr.forEach(function(val){
     console.log(val + "hello")
 })
@@ -46,3 +46,33 @@ console.log(firstelement)
 
 // Indexof function would be helping us to get the index value of the element we 
 // we are passing inside the function.
+
+// object in JavaScript: Like basic Structure would be 
+// var obj ={
+
+  // name: "Fenil" -> It would be having a parameter along with a value of it.
+  // key value pairs.
+//}
+
+/// Return in functions:
+
+function getname(){
+    return "Fenil is a coder"
+}
+
+var outputoffunction = getname()
+console.log(outputoffunction)
+
+// Asynchronous JS coding: The main thing to understand here is that if we have set of tasks
+// which are taking different times to get completed and if there are tasks which can be completed in less amount of time as compared to the
+// other tasks then why not run those task earlier instead of having unnecessary waiting time. So the main thing about Async JS coding is that
+// We would be starting all the tasks together and would be displaying the result of the task which gets completed first,, hence reducing the overall waiting time.
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+// Working with Node JS
+// Node JS basically means an Javascript Runtime Environment and it would be helping us to develop backend code with javascript. The main problem is that we cannot directly create backend
+// with JS, as it is not design to create backend, so we need an environment to create servers, developing the whole backend, for which we would be using NODE JS.
+
+// NPM -> It is a kind of an app store from which we can take code developed by other developers. It has different packages that can be used by other developers. Long story short
+// NPM is a place where we can store our JS code that can be used by other developers in the future.
+
+
+
+// Package JSon file would be contating all the necessary information about our project.
+
+// We also used some filesystem modules that included, // Reading A file, writing a file, copying a file, removing a file etc...
+
+// Learning about the HTTP and HTTPS protocol that //would be very much helpfull for building servers which //are a key part of any backend.
+
+
+// So HTTP protocol is the one which is responsible for allowing our machines and phone to exchange any information on the internet. This is the protocol which is responsible for all the information sharing on the internet.
