@@ -1,0 +1,26 @@
+Variables in JavaScript:
+Three ways to declare a variable in JS var, let and const.
+
+-> Usually in java or other programming language we have a way of creating variables,
+Int name_of_the_variable and its value. This type of languages are called as Strongly typed languages,
+cause the datatype would not be able to change once declared.
+
+JS -> Loosely typed language, datatype is assigned dynamically.
+
+The scope of Var is global. meaning a variable that is declared using Var can be used,
+outside of any conditional block, switch case statement in a general way we can use it anywhere inside our file.
+
+
+let would be having a local scope that is the only difference with var and it is also a loosely typed variable declaration.
+
+Const -> Its scope is always local, the value of the variable created using const cannot be changed once assigned.
+-> When the variable is created using const we need to assign the value during the time of creation we cannot leave it unassign.
+
+
+Difference between null and undefined.
+
+If there is a value that is existing but at the moment it is not present then it cane be said as null
+and other can be termed as undefined
+
+// Interesting thing about JS is that when you are trying to multiply number and a string JS would consider the string as the number and perform the multiplication operation.
+('1234'*1) -> 1234
