@@ -23,4 +23,4 @@ switch(options){
 }
 
 /// switch case is makes the code scalable when we are dealing with more number of conditions so its better to use
-// switch case then creating if else ladders.l
+// switch case then creating if else ladders.

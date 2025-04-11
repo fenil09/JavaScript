@@ -24,3 +24,7 @@ and other can be termed as undefined
 
 // Interesting thing about JS is that when you are trying to multiply number and a string JS would consider the string as the number and perform the multiplication operation.
 ('1234'*1) -> 1234
+
+
+// DOM manipulation:
+Document object model. -> HTML in terms of the browser we can it as DOM

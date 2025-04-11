@@ -2,8 +2,9 @@
 // Arrays would be used when we want to store multiple things in one variable then we would be using arrays.
 
 const studets = ["fenil","jashpal","avi","chetan"]
-const thirdstudnet= studets[3]
-alert(studets)
+const thirdstudnet= studets[1] // if we want to access the third student from the array it would be third-1 like the element real postion in array -1
+// so in the above case thirdstudent would be student[2]
+alert(thirdstudnet)
 
 // One important thing to know here is that if we want to add, update or delete something to student array we can do it.
 // but if we try to reassign a complete new array to student variable it wont be possible due to the constant variable declaration.
@@ -61,8 +62,8 @@ alert(array)
 
     // [1,2.3,4,5] splice(1,3) -> [2,3,4]
      //original array [1,5]
-
       const nums = [1,2,3,4,5]
     const splicearray = nums.splice(1,3)
     alert(splicearray)
     alert(nums)
+
