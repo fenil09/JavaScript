@@ -1,5 +1,5 @@
 
- const string = "1122233344566669"
+ const string ="ffenill"
 
  function nonrepeat(){
     let freqencymap = {};
@@ -11,7 +11,9 @@
            freqencymap[element] = 1
         }
      }
+     console.log(freqencymap['f'])
      for(nonrepeatcharacter in freqencymap){
+      console.log(nonrepeatcharacter)
         if(freqencymap[nonrepeatcharacter] === 1){
             return nonrepeatcharacter
         }
@@ -36,6 +38,7 @@
         freqencymap[element] = 1
        }
      }
+     console.log(freqencymap)
      for(nonrepeatelement in freqencymap){ // for..of only work on iterables and not on plain objects for that we have to use for..in
        if(freqencymap[nonrepeatelement] === 1){
         return nonrepeatelement
@@ -102,8 +105,8 @@ notToBe(val) accepts another value and returns true if the two values !== each o
     }
  }
 
- console.log(expect(5).tobe(5))
- console.log(expect(5).notobe(5))
+ //console.log(expect(5).tobe(5))
+ //console.log(expect(5).notobe(5))
 
 
 /*Write a function createCounter. It should accept an initial integer init. It should return an object with three functions.
@@ -144,3 +147,61 @@ counter.increment().decrement().increment().decrement().decrement()
 console.log(counter.getvalue())
 
 // 6,5,6,5,4,5
+
+
+
+
+// checking wether the object is empty or not:
+
+ function check(){
+   // Object.entries would be returning us an array 
+   const obj = {'value':5,'value':8}
+    if(Object.entries(obj).length ===0){
+      return true
+    }
+    else{
+      return false
+    }
+ }
+ //console.log(check())
+
+
+
+ // Creating a function that would check another function which is passed to it is invoked only once.
+
+  let checkfunctioninvocation = (invokefunction) => {
+      let flagcounter =0
+      var result = invokefunction()
+      if(result!=null){
+         flagcounter++
+         if(flagcounter!=2){
+            console.log('check')
+         }
+         else{
+            return 'undefin'
+         }
+      }
+  }
+
+   function add(){
+     // console.log("this is  add function")
+   }
+  
+    for(i=0;i<3;i++){
+      //console.log(checkfunctioninvocation())
+    }
+
+
+    async function cleanjson(){
+     await fetch('https://coderbyte.com/api/challenges/json/json-cleaning').then((result) => {
+     console.log(result.body.)
+     })
+    }
+
+    cleanjson()
+
+
+
+
+
+
