@@ -1,0 +1,52 @@
+
+-> The first thing that happens whenever we are running the source code in JS
+is that a global execution context is been created.
+
+-> Two phases of global execution context
+1. Memory phase
+2. code phase
+
+-> Javascript would be traversing our entire code and would be loading all of
+the variables inside the Memory phase. So the value of the variable created or loaded in the memory phase
+would be having an initial value of undefined always.
+
+code phase -> would be executing the code line by line and once
+there is no code or the whole code is been readed the global execution context would be deleted.
+
+
+let us say we have the following code
+ x =30
+ console.log(value ofx)
+ var x =10
+
+  memory phase ||  code phase
+1. x= undefined       x= 30 // as the value of x is changed to 30
+   
+   x =30               console.log(Value of x) -> print 30 on console
+      x =10 after 
+      var x= 10 is been readed
+      by JS
+
+      // Now let us say how the global execution context would be created when a function kicks in.
+
+      -> Function is also treated as variables when it comes to the memory phase 
+      in global executing context. The difference between function and variable loading in memory phase is that
+      when the variable is loaded its value is set to be undefined but for the function it is loaded with its entire body.
+
+      -> Now another important thing to know here is that when it comes to the code phase and if there is a function call
+      then a new local context would be created inside the code phase for that function with the memory phase and the code phase
+      and the same cycle would repeat until the function is been executed fully and once done the local context would be deleted.
+
+
+      A question that comes is why we are able to call the function above its declaration in JS?
+      -> Answer is due to function been loaded already in memory phase when the global execution context is created which allows the function to be called before 
+      its execution is written.
+
+-> A interview question that is asked which is var, let, const hoisted.
+-> The answer is var is hoisted and the variable can be accessed before its declaration,
+In the case of let and const they also support hoisting but they create a temporal dead zone above the area where they 
+have been created. Any access try of the variable in this TDZ would be 
+rejected hence we would be given a compilation error. yet let and const still support
+hoisting when we see their global execution context the memory phase would be having the variables the 
+only thing is we cannot access them due to TDZ
+

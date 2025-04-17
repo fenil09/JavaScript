@@ -191,17 +191,3 @@ console.log(counter.getvalue())
       //console.log(checkfunctioninvocation())
     }
 
-
-    async function cleanjson(){
-     await fetch('https://coderbyte.com/api/challenges/json/json-cleaning').then((result) => {
-     console.log(result.body.)
-     })
-    }
-
-    cleanjson()
-
-
-
-
-
-
